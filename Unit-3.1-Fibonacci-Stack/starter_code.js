@@ -1,8 +1,7 @@
 // Create the `series` variable
 var series = [0, 1];
 
-/* your check in the while loop */
-while () {
+while (/* your check here */) {
   // your code here
 }
 

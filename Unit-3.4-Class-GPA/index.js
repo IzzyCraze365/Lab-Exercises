@@ -1,11 +1,29 @@
 let grades = {
-    midterm: { grade: 3.3, weight: 1 },
-    project: { grade: 4.0, weight: 1 },
-    final: { grade: 3.2, weight: 2 },
+  midterm: { grade: 3.3, weight: 1 },
+  project: { grade: 4.0, weight: 1 },
+  final: { grade: 3.2, weight: 2 },
 };
 
 function gpa(someGrades) {
-    // write your code here
+  // write your code here
+  let gradesToWeight = Object.keys(someGrades);
+  let gradeSum = 0;
+  let weightSum = 0;
+  gradesToWeight.forEach((test) => {
+    // The value of test is "midterm", "project" and "final"
+    //console.log(`Current Test: ${test}`);  //! TEST
+    let grade = someGrades[test].grade; //TODO This was not in the readme.md but I like having a median variable
+    let weight = someGrades[test].weight; //TODO This was not in the readme.md but I like having a median variable
+    //console.log("Grade:", grade, `Weight: ${weight}`); //! TEST
+    gradeSum += grade * weight;
+    weightSum += weight;
+    //console.log("gradeSum", gradeSum); //! TEST
+    //console.log("weightSum "+ weightSum); //! TEST
+  });
+  //console.log("Final gradeSum", gradeSum); //! TEST
+  //console.log("Final weightSum "+ weightSum); //! TEST
+  let weightedGrade = gradeSum / weightSum;
+  return weightedGrade;
 }
 
 console.log("The final GPA is " + gpa(grades));

@@ -1,36 +1,41 @@
 let library = [
-    {
-        title: "A Game of Thrones",
-        tags: ["fantasy", "george r.r. martin"],
-    },
-    {
-        title: "Eloquent JavaScript",
-        tags: ["technology", "programming", "marijn haverbeke"],
-    },
-    {
-        title: "The Fellowship of the Ring",
-        tags: ["fantasy", "jrr tolkien"],
-    },
-    {
-        title: "The Return of the King",
-        tags: ["fantasy", "jrr tolkien"],
-    },
-    {
-        title: "The Anthropocene Reviewed",
-        tags: ["nonfiction", "john green"],
-    },
-    {
-        title: "The Left Hand of Darkness",
-        tags: ["sci-fi", "ursula le guin "],
-    },
-    // add more books if you would like
+  {
+    title: "A Game of Thrones",
+    tags: ["fantasy", "george r.r. martin"],
+  },
+  {
+    title: "Eloquent JavaScript",
+    tags: ["technology", "programming", "marijn haverbeke"],
+  },
+  {
+    title: "The Fellowship of the Ring",
+    tags: ["fantasy", "jrr tolkien"],
+  },
+  {
+    title: "The Return of the King",
+    tags: ["fantasy", "jrr tolkien"],
+  },
+  {
+    title: "The Anthropocene Reviewed",
+    tags: ["nonfiction", "john green"],
+  },
+  {
+    title: "The Left Hand of Darkness",
+    tags: ["sci-fi", "ursula le guin "],
+  },
+  // add more books if you would like
 ];
 
 function search(tag) {
-    // your code here
-    .filter(function(somebook){
-        
-    })
+  // your code here
+  let bookSelection = library.filter((somebook) => somebook.tags.includes(tag));
+  console.log("1", bookSelection); //! TEST
+  let bookTitles = [];
+  for (let i = 0; i < bookSelection.length; i++) {
+    console.log("Inside loop", bookSelection[i].title);
+    bookTitles.push(bookSelection[i].title);
+  }
+  return bookTitles;
 }
 
 console.log(search("fantasy"));

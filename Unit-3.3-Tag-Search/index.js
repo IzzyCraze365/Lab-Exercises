@@ -28,6 +28,9 @@ let library = [
 
 function search(tag) {
     // your code here
+    .filter(function(somebook){
+        
+    })
 }
 
 console.log(search("fantasy"));

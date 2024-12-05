@@ -12,8 +12,8 @@ function gpa(someGrades) {
   gradesToWeight.forEach((testKey) => {
     // The value of test is "midterm", "project" and "final"
     //console.log(`Current Test: ${test}`);  //! TEST
-    let grade = someGrades[testKey].grade; //TODO This was not in the readme.md but I like having a median variable
-    let weight = someGrades[testKey].weight; //TODO This was not in the readme.md but I like having a median variable
+    let grade = someGrades[testKey].grade; //TODO This was not in the readme.md but I like having a median variable.
+    let weight = someGrades[testKey].weight; //TODO This was not in the readme.md but I like having a median variable.
     //console.log("Grade:", grade, `Weight: ${weight}`); //! TEST
     gradeSum += grade * weight;
     weightSum += weight;

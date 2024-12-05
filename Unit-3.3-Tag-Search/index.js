@@ -28,11 +28,11 @@ let library = [
 
 function search(tag) {
   // your code here
-  let bookSelection = library.filter((somebook) => somebook.tags.includes(tag));
-  console.log("1", bookSelection); //! TEST
-  let bookTitles = [];
+  let bookSelection = library.filter((somebook) => somebook.tags.includes(tag)); //somebook can literaly be any unused variable
+  // console.log("1", bookSelection); //! TEST
+  let bookTitles = []; // creating a new array of books that we can push the book titles into
   for (let i = 0; i < bookSelection.length; i++) {
-    console.log("Inside loop", bookSelection[i].title);
+    //console.log("Inside loop", bookSelection[i].title); //! TEST
     bookTitles.push(bookSelection[i].title);
   }
   return bookTitles;

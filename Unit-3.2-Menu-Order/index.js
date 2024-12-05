@@ -6,7 +6,7 @@ const menu = {
   shake: 1.11,
   salad: 4.25,
   order: function order(orderPlaced) {
-    let orderSplit = orderPlaced.split(" ");
+    let orderSplit = orderPlaced.split(" "); // turns the string into an array.  Splits each array item by the empty space.
     //console.log("orderSplit", orderSplit); //! TEST
     let sum = 0;
     for (foodItem of orderSplit) {

@@ -1,11 +1,15 @@
 class Cake {
-    // your code here
-    constructor(flavor, icing, decoration) {
-        (this.flavor = flavor), (this.icing = icing), (this.decoration = decoration);
-      }
-      describe(){
-        console.log(`It is a ${this.flavor} cake, with ${this.icing} frosting, and ${this.decoration}!`)
-    }
+  // your code here
+  constructor(flavor, icing, decoration) {
+    (this.flavor = flavor),
+      (this.icing = icing),
+      (this.decoration = decoration);
+  }
+  describe() {
+    console.log(
+      `It is a ${this.flavor} cake, with ${this.icing} frosting, and ${this.decoration}!`
+    );
+  }
 }
 
 let chocolateCake = new Cake("chocolate", "caramel", "sprinkles");

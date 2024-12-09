@@ -1,5 +1,6 @@
 //Lab assigned October 28, 2024
 
+//* I made this better by turining it into a function
 //let lineNumber;
 function potatoPoem(lineNumber) {
   let count = 0;

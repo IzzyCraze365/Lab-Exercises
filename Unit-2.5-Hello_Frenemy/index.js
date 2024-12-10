@@ -1,10 +1,10 @@
 function greeter(name) {
   // Your code goes here
   let nameCheck = capitalizeInput(name);
-  if(name.toLowerCase() === "enemy"){
-    console.log("Go away,", nameCheck+"!");
-  }else{
-    console.log(`Hello, ${nameCheck}.`)
+  if (name.toLowerCase() === "enemy") {
+    console.log("Go away,", nameCheck + "!");
+  } else {
+    console.log(`Hello, ${nameCheck}.`);
   }
 }
 
@@ -12,7 +12,6 @@ greeter("enemy"); // Prints "Go away, Enemy!"
 greeter("enEmy"); // Prints "Go away, Enemy!"
 greeter("FrIeNd"); // Prints "Hello, Friend."
 greeter("brUCE wAyNE"); // Prints "Hello, Bruce Wayne."
-
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

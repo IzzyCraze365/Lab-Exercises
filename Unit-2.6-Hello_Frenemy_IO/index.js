@@ -1,4 +1,4 @@
-const readline = require('readline');
+const readline = require("readline");
 const readlineInterface = readline.createInterface(
   process.stdin,
   process.stdout
@@ -10,27 +10,24 @@ function ask(questionText) {
   });
 }
 
-let enemyList = ['darth vader', 'voldemort', 'palatine', 'lex luthor'];
+let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 
 async function respond() {
   // your code here
   // remember to use `await`
-const greeting = `What is your name?\n`;
+  const greeting = `What is your name?\n`;
   let guestName = await ask(greeting);
   let nameChecker = capitalizeInput(guestName);
-  if(guestName.toLowerCase() === "darth vader"){
-    console.log("Noooooo! That's impossible!");
+  if (guestName.toLowerCase() === "darth vader") {
+    console.log(`Noooooo! That's impossible!\n`);
+  } else if (enemyList.includes(guestName.toLowerCase())) {
+    console.log("Go away,", nameChecker + `!\n`);
+  } else {
+    console.log(`Hello, ${nameChecker}.\n`);
   }
-  else if(enemyList.includes(guestName.toLowerCase())){
-    console.log("Go away,", nameChecker+"!");
-  }else{
-    console.log(`Hello, ${nameChecker}.`)
-  }
-
-
+  respond();
 }
 respond();
-
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

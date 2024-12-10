@@ -17,4 +17,4 @@ function potatoPoem(lineNumber) {
   }
 }
 
-potatoPoem(21);
+potatoPoem(15);

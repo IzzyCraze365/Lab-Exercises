@@ -1,3 +1,7 @@
+// Created this code for the October 2024 Cohort
+// I coded it to to help everyone with their Zorkington
+// December 12, 2024
+
 class Location {
   constructor(name, description, adjacentLocations, catchablePokemon) {
     this.name = name;

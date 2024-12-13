@@ -55,11 +55,11 @@ function moveLocation(newLocation) {
     console.log(locationLookUp[locationCurrent].description);
     console.log(
       "47 Pokemon you can catch in this area:",
-      locationLookUp[locationCurrent].catchablePokemon[1]
+      locationLookUp[locationCurrent].catchablePokemon[1] // showcases how to drill into Bulbasaur
     );
     console.log(
       "48 Pokemon you can catch in this area:",
-      locationLookUp[locationCurrent]["catchablePokemon"][2]
+      locationLookUp[locationCurrent]["catchablePokemon"][2] // showcases how to drill into Squirtle
     );
     //console.log("Pokemon Exx", locationLookUp[locationCurrent]); // * THIS WORKS
     //console.log("Pokemon WHy:", locationLookUp.locationCurrent);  //! THIS FAILS

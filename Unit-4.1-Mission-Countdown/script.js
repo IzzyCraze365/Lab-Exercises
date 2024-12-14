@@ -7,5 +7,9 @@ let startInterval = getElementById(start-interval);
 let intervalDisplay = getElementById(interval-display);
 
 // Event Listeners
-startTimeout.addEventListener("click", functionNameHere);
+startTimeout.addEventListener("click", startingTimeout);
 startInterval.addEventListener("click", functionNameHere);
+
+function startingTimeout(){
+
+}

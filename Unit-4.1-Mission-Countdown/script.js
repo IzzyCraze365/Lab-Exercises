@@ -13,4 +13,11 @@ startInterval.addEventListener("click", functionNameHere);
 function startingTimeout() {
   console.log("Start Timeout Clicked");
   timeoutDisplay.textContent = "Getting Ready";
+  setTimeout(countDown,10,10);
+  timeoutDisplay.textContent = "READY!";
+
+}
+
+function countDown(time){
+
 }

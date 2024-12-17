@@ -20,17 +20,16 @@ function startingTimeout() {
 }
 
 function countDown() {
+  console.log("insdie countDown");
   let count = 5;
   // This is how setInterval works
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
   let timer = setInterval(countingDown, 1000, count);
 }
-  function countingDown(count){
-    if(count < 0){
-      intervalDisplay.textContent = "GO!";
-      clearInterval(timer);
-     }
-        console.log('Count',count);
-        ((intervalDisplay.textContent = i), 1000);
-      }
+function countingDown(count) {
+  console.log("insdie countingDown");
+  if (count < 0) {
+    intervalDisplay.textContent = "GO!";
+    clearInterval(timer);
   }
+}

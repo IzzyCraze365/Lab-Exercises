@@ -9,6 +9,7 @@ let userInput = document.querySelector("#user-input");
 let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 
 // Adding the event listener to our form
+//TODO something about the submit is not working well
 nameForm.addEventListener("click", (event) => {
   event.preventDefault;
   let guestName = userInput.value;
@@ -16,13 +17,13 @@ nameForm.addEventListener("click", (event) => {
   let nameChecker = capitalizeInput(guestName);
   if (guestName.toLowerCase() === "darth vader") {
     console.log(`Noooooo! That's impossible!`);
-    computerResponse.textContent(`Noooooo! That's impossible!`);
+    computerResponse.textContent = `Noooooo! That's impossible!`;
   } else if (enemyList.includes(guestName.toLowerCase())) {
     console.log("Go away,", nameChecker + `!`);
-    computerResponse.textContent("Go away,", nameChecker + `!`);
+    (computerResponse.textContent = "Go away,"), nameChecker + `!`;
   } else {
     console.log(`Hello, ${nameChecker}.`);
-    computerResponse.textContent(`Hello, ${nameChecker}.`);
+    computerResponse.textContent = `Hello, ${nameChecker}.`;
   }
 });
 

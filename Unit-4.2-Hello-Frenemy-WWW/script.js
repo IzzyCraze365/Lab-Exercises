@@ -1,4 +1,14 @@
-// Your code goes here
+console.log("Hello World"); //! TEST Link Up
+
+// Getting our DOM elements
+// Query Selectors
+let computerResponse = document.querySelector("#computer-response");
+let nameForm = document.querySelector("#name-form");
+let userInput = document.querySelector("#user-input");
+
+// Adding the event listener to our form
+
+
 const readline = require("readline");
 const readlineInterface = readline.createInterface(
   process.stdin,

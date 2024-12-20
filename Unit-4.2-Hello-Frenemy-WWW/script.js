@@ -14,7 +14,9 @@ nameForm.addEventListener("click", (event) => {
   event.preventDefault;
   let guestName = userInput.value;
   console.log("Guest Name: ", guestName);
+
   let nameChecker = capitalizeInput(guestName);
+
   if (guestName.toLowerCase() === "darth vader") {
     console.log(`Noooooo! That's impossible!`);
     computerResponse.textContent = `Noooooo! That's impossible!`;

@@ -6,39 +6,28 @@ let computerResponse = document.querySelector("#computer-response");
 let nameForm = document.querySelector("#name-form");
 let userInput = document.querySelector("#user-input");
 
-// Adding the event listener to our form
-
-
-const readline = require("readline");
-const readlineInterface = readline.createInterface(
-  process.stdin,
-  process.stdout
-);
-
-function ask(questionText) {
-  return new Promise((resolve, reject) => {
-    readlineInterface.question(questionText, resolve);
-  });
-}
-
 let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 
-async function respond() {
-  // your code here
-  // remember to use `await`
-  const greeting = `What is your name?\n`;
-  let guestName = await ask(greeting);
+
+// Adding the event listener to our form
+nameForm.addEventListener("click",(event)=>{
+    event.preventDefault;
+console.log
+  let guestName = userInput.value;
+  console.log("Guest Name: ",guestName)
   let nameChecker = capitalizeInput(guestName);
   if (guestName.toLowerCase() === "darth vader") {
     console.log(`Noooooo! That's impossible!\n`);
+    computerResponse.textContent(`Noooooo! That's impossible!`);
   } else if (enemyList.includes(guestName.toLowerCase())) {
     console.log("Go away,", nameChecker + `!\n`);
+    computerResponse.textContent("Go away,", nameChecker + `!`);
   } else {
     console.log(`Hello, ${nameChecker}.\n`);
+    computerResponse.textContent(`Hello, ${nameChecker}.`);
   }
-  respond();
-}
-respond();
+
+})
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

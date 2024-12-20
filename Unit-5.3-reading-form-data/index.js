@@ -7,9 +7,12 @@
 // echo $null >> server.js
 
 
-
+// mad libs clone as an API
 const express = require('express');
 const app = express();
+
+// set up out middleware
+app.use(express.urlencoded)
 
 const PORT = 3000;
 

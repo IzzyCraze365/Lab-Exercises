@@ -8,26 +8,23 @@ let userInput = document.querySelector("#user-input");
 
 let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 
-
 // Adding the event listener to our form
-nameForm.addEventListener("click",(event)=>{
-    event.preventDefault;
-console.log
+nameForm.addEventListener("click", (event) => {
+  event.preventDefault;
   let guestName = userInput.value;
-  console.log("Guest Name: ",guestName)
+  console.log("Guest Name: ", guestName);
   let nameChecker = capitalizeInput(guestName);
   if (guestName.toLowerCase() === "darth vader") {
-    console.log(`Noooooo! That's impossible!\n`);
+    console.log(`Noooooo! That's impossible!`);
     computerResponse.textContent(`Noooooo! That's impossible!`);
   } else if (enemyList.includes(guestName.toLowerCase())) {
-    console.log("Go away,", nameChecker + `!\n`);
+    console.log("Go away,", nameChecker + `!`);
     computerResponse.textContent("Go away,", nameChecker + `!`);
   } else {
-    console.log(`Hello, ${nameChecker}.\n`);
+    console.log(`Hello, ${nameChecker}.`);
     computerResponse.textContent(`Hello, ${nameChecker}.`);
   }
-
-})
+});
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

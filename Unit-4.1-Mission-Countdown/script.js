@@ -29,7 +29,7 @@ function countDown() {
   let count = 5;
   // This is how setInterval works
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
-  let timer = setInterval(()=>countingDown(count), 1000, count);
+  /* let timer =  */setInterval(()=>countingDown(count), 1000, count);
 }
 function countingDown(count) {
   console.log("inside countingDown");

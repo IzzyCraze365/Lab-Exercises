@@ -12,10 +12,11 @@ startTimeout.addEventListener("click", () => {
 });
 startInterval.addEventListener("click", () => {
   countDown(); // This starts our countdown
-}); 
+});
 
 function startingTimeout() {
-  console.log("Start Timeout Clicked");
+  console.log("Get Ready? Clicked");
+  console.log("Inside startTimeout");
   timeoutDisplay.textContent = "Getting Ready...";
   // This is how setTimeout works
   /* setTimeout(functionRef, delay, param1, param2, …, paramN) */
@@ -25,17 +26,22 @@ function startingTimeout() {
 }
 
 function countDown() {
-  console.log("insdie countDown");
+  console.log("Start Counddown Clicked");
+  console.log("inside countDown");
   let count = 5;
   // This is how setInterval works
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
-  /* let timer =  */setInterval(()=>countingDown(count), 1000, count);
+  /* let timer =  */ setInterval(() => countingDown(count), 1000, count);
 }
 function countingDown(count) {
   console.log("inside countingDown");
+  console.log("count", count);
   intervalDisplay.textContent = count;
   if (count < 0) {
     intervalDisplay.textContent = "GO!";
     clearInterval(timer);
   }
+  count--;
+  console.log("count", count);
+  return count;
 }

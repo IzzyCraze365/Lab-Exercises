@@ -33,7 +33,8 @@ function countDown() {
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
   /* let timer =  */ setInterval(() => countingDown(count), 1000, count);
 }
-// TODO the count is not returning properly, I need to fix the setInterval section
+// TODO the count is not returning properly, I need to fix the setInterval section.
+// It Christmas Day!!!
 function countingDown(count) {
   console.log("inside countingDown");
   console.log("count", count);

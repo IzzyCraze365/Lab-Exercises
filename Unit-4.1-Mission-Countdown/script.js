@@ -1,16 +1,12 @@
-// Your code goes here
-
 // Go Fishing, get the IDs from the HTML linked up
 let startTimeout = document.getElementById("start-timeout");
 let timeoutDisplay = document.getElementById("timeout-display");
 let startInterval = document.getElementById("start-interval");
 let intervalDisplay = document.getElementById("interval-display");
 
-
 // Variable that will be used later in the code.
 let count = -1; //I set this to -1 so the "Start Countdown" Button does not do anything until you are ready
 let timer = 0; // Created the variable so it can be used later on without issue
-
 
 // Event Listeners
 startTimeout.addEventListener("click", () => {
@@ -19,7 +15,6 @@ startTimeout.addEventListener("click", () => {
 startInterval.addEventListener("click", () => {
   countDown(); // This starts our countdown
 });
-
 
 // The function that triggers when "Get Read?" is clicked
 function startingTimeout() {
@@ -35,7 +30,6 @@ function startingTimeout() {
   }, 5000); // 5 seconds, timer in miliseconds
 }
 
-
 // The function that triggers when "Start Counddown" is clicked
 function countDown() {
   console.log("Start Counddown Clicked"); //! TEST
@@ -44,7 +38,6 @@ function countDown() {
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
   timer = setInterval(() => countingDown(), 1000, count);
 }
-
 
 // This function is what controls the setInterval
 function countingDown() {

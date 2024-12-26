@@ -6,7 +6,8 @@ let timeoutDisplay = document.getElementById("timeout-display");
 let startInterval = document.getElementById("start-interval");
 let intervalDisplay = document.getElementById("interval-display");
 
-let count = 5;
+let count = -1;
+let timer = 0;
 
 // Event Listeners
 startTimeout.addEventListener("click", () => {
@@ -18,6 +19,7 @@ startInterval.addEventListener("click", () => {
 
 function startingTimeout() {
   console.log("Get Ready? Clicked");
+  count = 5;
   console.log("Inside startTimeout");
   timeoutDisplay.textContent = "Getting Ready...";
   // This is how setTimeout works
@@ -33,8 +35,8 @@ function countDown() {
 //  let count = 5;
   // This is how setInterval works
   /* setInterval(func, delay, arg1, arg2, ...  argN) */
- //  let timer = setInterval(() => countingDown(), 1000, count);
-   let timer = setInterval(countingDown(), 1000, count);
+  timer = setInterval(() => countingDown(), 1000, count);
+  // let timer = setInterval(countingDown(), 1000, count);
 }
 // TODO the count is not returning properly, I need to fix the setInterval section.
 // It Christmas Day!!!!!!
@@ -52,6 +54,7 @@ function countingDown() {
     count--;
     return count;
   }else{
+    console.log("Clearing the Timer");
     clearInterval(timer);
   }
 }

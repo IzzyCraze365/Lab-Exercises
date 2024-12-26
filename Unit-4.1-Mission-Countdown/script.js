@@ -6,8 +6,11 @@ let timeoutDisplay = document.getElementById("timeout-display");
 let startInterval = document.getElementById("start-interval");
 let intervalDisplay = document.getElementById("interval-display");
 
+
+// Variable that will be used later in the code.
 let count = -1; //I set this to -1 so the "Start Countdown" Button does not do anything until you are ready
 let timer = 0; // Created the variable so it can be used later on without issue
+
 
 // Event Listeners
 startTimeout.addEventListener("click", () => {
@@ -21,13 +24,14 @@ startInterval.addEventListener("click", () => {
 // The function that triggers when "Get Read?" is clicked
 function startingTimeout() {
   console.log("Get Ready? Clicked"); //! TEST
-  /* count = 5; */
   console.log("Inside startTimeout"); //! TEST
   timeoutDisplay.textContent = "Getting Ready...";
+  intervalDisplay.textContent = ""; // This clears the textContent so when "Getting Ready" is clicked
   // This is how setTimeout works
   /* setTimeout(functionRef, delay, param1, param2, …, paramN) */
   setTimeout(() => {
-    timeoutDisplay.textContent = "READY!"; count = 5;
+    timeoutDisplay.textContent = "READY!";
+    count = 5; // This sets the count to 5 so the Start Counddown button can be clicked
   }, 5000); // 5 seconds, timer in miliseconds
 }
 
@@ -41,6 +45,7 @@ function countDown() {
   timer = setInterval(() => countingDown(), 1000, count);
 }
 
+
 // This function is what controls the setInterval
 function countingDown() {
   console.log("inside countingDown"); //! TEST
@@ -50,12 +55,12 @@ function countingDown() {
     intervalDisplay.textContent = "GO!";
     count--;
     return count;
-  }else if(count > 0){
+  } else if (count > 0) {
     console.log("if Statement count", count); //! TEST
     intervalDisplay.textContent = count;
     count--;
     return count;
-  }else{
+  } else {
     console.log("Clearing the Timer"); //! TEST
     clearInterval(timer);
   }

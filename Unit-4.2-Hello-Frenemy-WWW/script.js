@@ -10,6 +10,7 @@ let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 
 // Adding the event listener to our form
 //TODO something about the submit is not working well
+// TODO If pulls up the folder list
 nameForm.addEventListener("click", (event) => {
   event.preventDefault;
   let guestName = userInput.value;

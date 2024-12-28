@@ -11,12 +11,12 @@ let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 // Adding the event listener to our form
 //TODO something about the submit is not working well
 // TODO If pulls up the folder list
-nameForm.addEventListener("click", (event) => {
+nameForm.addEventListener("onclick", (event) => {
   event.preventDefault;
   let guestName = userInput.value;
   console.log("Guest Name: ", guestName);
 
-  let nameChecker = capitalizeInput(guestName);
+  //let nameChecker = capitalizeInput(guestName);
 
   if (guestName.toLowerCase() === "darth vader") {
     console.log(`Noooooo! That's impossible!`);

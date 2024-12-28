@@ -28,6 +28,7 @@ nameForm.addEventListener("click", (event) => {
     console.log(`Hello, ${nameChecker}.`);
     computerResponse.textContent = `Hello, ${nameChecker}.`;
   }
+  console.log("END OF LINE"); //! TEST
 });
 
 //! The following functions were taken from the Capitalize Assignment

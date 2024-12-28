@@ -11,7 +11,8 @@ let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 // Adding the event listener to our form
 //TODO something about the submit is not working well
 // TODO If pulls up the folder list
-nameForm.addEventListener("onclick", (event) => {
+//nameForm.addEventListener("onclick", (event) => {
+  function clicker(event){
   event.preventDefault;
   let guestName = userInput.value;
   console.log("Guest Name: ", guestName);
@@ -29,7 +30,7 @@ nameForm.addEventListener("onclick", (event) => {
     computerResponse.textContent = `Hello, ${nameChecker}.`;
   }
   console.log("END OF LINE"); //! TEST
-});
+};
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

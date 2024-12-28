@@ -1,4 +1,4 @@
-console.log("Hello World"); //! TEST Link Up
+console.log("Hello World"); //! TEST Linked Up
 
 // Getting our DOM elements
 // Query Selectors

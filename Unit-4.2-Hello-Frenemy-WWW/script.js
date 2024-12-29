@@ -12,13 +12,15 @@ let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 // Adding the event listener to our form
 //TODO something about the submit is not working well
 // TODO If pulls up the folder list
-button.addEventListener("onclick", (event) => {
+//button.addEventListener("onclick", (event) => {
   event.preventDefault;
   let guestName = userInput.value;
   console.log("Guest Name: ", guestName);
 
   let nameChecker = capitalizeInput(guestName);
 
+function submitButton(){
+  console.log("Inside Function");
   if (guestName.toLowerCase() === "darth vader") {
     console.log(`Noooooo! That's impossible!`);
     computerResponse.textContent = `Noooooo! That's impossible!`;
@@ -30,7 +32,7 @@ button.addEventListener("onclick", (event) => {
     computerResponse.textContent = `Hello, ${nameChecker}.`;
   }
   console.log("END OF LINE"); //! TEST
-});
+//});
 
 //! The following functions were taken from the Capitalize Assignment
 // Split up the strings by the space " "

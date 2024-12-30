@@ -13,7 +13,7 @@ let enemyList = ["darth vader", "voldemort", "palatine", "lex luthor"];
 //TODO something about the submit is not working well
 // TODO If pulls up the folder list
 //button.addEventListener("onclick", (event) => {
-  event.preventDefault;
+  //event.preventDefault;
   let guestName = userInput.value;
   console.log("Guest Name: ", guestName);
 

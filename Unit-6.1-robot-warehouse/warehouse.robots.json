@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "677dd22d78c6d6f4f10b0cbe"
+  },
+  "C-3P0": {
+    "creatorName": "Anakin 'Darth Vader' Skywalker",
+    "robotName": "C-3P0",
+    "robotColor": "Gold",
+    "serialNumber": "c3p0"
+  }
+},
+{
+  "_id": {
+    "$oid": "677dd24078c6d6f4f10b0cc0"
+  },
+  "R2-D2": {
+    "creatorName": "Obi-Wan Kenobi",
+    "robotName": "R2-D2",
+    "robotColor": "Blue & White",
+    "serialNumber": "r2d2"
+  }
+},
+{
+  "_id": {
+    "$oid": "677dd28d78c6d6f4f10b0cc3"
+  },
+  "Rosie the Robot": {
+    "creatorName": "George Jetson",
+    "robotName": "Rosie",
+    "robotColor": "Gray",
+    "serialNumber": "r2000"
+  }
+},
+{
+  "_id": {
+    "$oid": "677dd2ee78c6d6f4f10b0cc5"
+  },
+  "Wall-E": {
+    "creatorName": "Buy 'n Large",
+    "robotName": "Wall-E",
+    "robotColor": "Yellow",
+    "serialNumber": "Waste Allocation Load-Lifter Earth-Class"
+  }
+},
+{
+  "_id": {
+    "$oid": "677dd35078c6d6f4f10b0cc8"
+  },
+  "Optimus Primal": {
+    "creatorName": "The Allspark",
+    "robotName": "Orian Pax",
+    "robotColor": "Silverback Gorilla",
+    "serialNumber": "Truck Not Monkey"
+  }
+}]

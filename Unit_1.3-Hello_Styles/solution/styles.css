@@ -1,0 +1,27 @@
+html {
+  max-width: 800px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#page-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+#navbar {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-link {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 18px;
+}

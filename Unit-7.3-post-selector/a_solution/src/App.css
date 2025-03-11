@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100dvh;
+}
+
+#display {
+  width: 70%;
+}
+
+#list {
+  overflow-y: scroll;
+}

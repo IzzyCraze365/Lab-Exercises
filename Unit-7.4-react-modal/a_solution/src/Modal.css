@@ -1,0 +1,29 @@
+#modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(50, 50, 50, 70%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+#modal-content > button {
+  display: block;
+  padding: 8px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
